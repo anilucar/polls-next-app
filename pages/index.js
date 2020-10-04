@@ -51,7 +51,7 @@ class Home extends React.Component {
         {!showDetail ? (
           <>
             <div className="container">
-              <h5 className="card-title text-center">Questions</h5>
+              <h5 className="card-title text-center mb-5">Questions</h5>
               {questions.map((question) => (
                 <QuestionCard
                   key={question.id}

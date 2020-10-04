@@ -54,7 +54,7 @@ class QuestionDetail extends React.Component {
     const { selectedRadioButton, disableSubmitButton } = this.state;
     return (
       <div className="container">
-        <h5>Question: {this.props.question.question}</h5>
+        <h5 className="mb-5 mt-5">Question: {this.props.question.question}</h5>
         <form onSubmit={this.onFormSubmit.bind(this)}>
           {this.props.question.choices.map((choice) => (
             <div className="card" key={choice.id}>
